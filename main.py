@@ -1,5 +1,5 @@
-import os
-import script
+#!/usr/bin/env python3
 
-problem = input("Enter the problem: ")
-print(script.solve(problem))
+import conversation
+
+conversation.new_conversation()

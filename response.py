@@ -1,6 +1,12 @@
 
+import datetime
 import json
 
-response = {"d": "This is the value associated with key 'd'."}
+current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-print(json.dumps(response))
+response = {
+    "time": current_time
+}
+
+json_response = json.dumps(response)
+print(json_response)
